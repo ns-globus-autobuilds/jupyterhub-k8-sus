@@ -2,10 +2,20 @@
 
 This is the notebook server that is started when someone visits jupyter.demo.globus.org.
 
-The Docker image is hosted here: https://hub.docker.com/r/nickolaussaint/gwk8s
+Everything here is automatically built using a separate build repo here: 
+https://hub.docker.com/repository/docker/nsglobusautobuilds/single-user-server
+
+The nsglobusautobuilds is used to to the extensive permissions required by dockerhub in
+order to use automatic builds (Read and write access to everything public and private).
 
 This extends the original single user server listed here:
 https://github.com/jupyterhub/zero-to-jupyterhub-k8s/tree/master/images/singleuser-sample
+
+The image here probably lags behind on the most stable version. We also add some Globus
+specific features, such as ensuring the latest Globus tools are installed and can be run
+with the Globus Tutorial Notebooks:
+
+https://github.com/globus/globus-jupyter-notebooks 
 
 ### Remote files
 
@@ -17,12 +27,3 @@ and that all storage will be wiped when the server is shut down.
 * Notebook Puller -- https://s3.us-east-2.amazonaws.com/globusworldk8.nick.globuscs.info/NotebookPuller.ipynb
 * File/Repo Manifest -- https://s3.us-east-2.amazonaws.com/globusworldk8.nick.globuscs.info/gwmanifest.json
 
-### Updating
-
-Run the following commands (UNTESTED! It's been a while!) from this directory:
-
-```
-$ docker build .
-$ docker tag <image> nickolaussaint/gwk8s:v0.8.x
-$ docker push nickolaussaint/gwk8s
-```
