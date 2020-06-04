@@ -1,5 +1,6 @@
 globus_sdk
 globus-cli
+minid>=2.0.0b4
 numpy
 gitpython
 boto3
