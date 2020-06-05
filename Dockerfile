@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:d4e60350af15
+FROM jupyter/base-notebook:a07573d685a4
 # Built from... https://hub.docker.com/r/jupyter/base-notebook/
 #               https://github.com/jupyter/docker-stacks/blob/master/base-notebook/Dockerfile
 # Built from... https://github.com/jupyterhub/zero-to-jupyterhub-k8s/commit/1cd1311185a9f016608a83bb7dcd3350be8e0ae9
@@ -11,12 +11,22 @@ FROM jupyter/base-notebook:d4e60350af15
 # Example install of git and nbgitpuller.
 # NOTE: git is already available in the jupyter/minimal-notebook image.
 USER root
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-      git \
-      && \
-    apt-get purge && apt-get clean && \
-    apt-get -y --allow-unauthenticated install vim build-essential wget gfortran bison libibverbs-dev libibmad-dev libibumad-dev librdmacm-dev graphviz gcc make
+RUN apt-get update && apt-get install --yes --no-install-recommends \
+    iputils-ping \
+    dnsutils \
+    git \
+    vim \
+    graphviz \
+    build-essential \
+    wget \
+    gfortran bison \
+    libibverbs-dev \
+    libibmad-dev \
+    libibumad-dev \
+    librdmacm-dev \
+    gcc \
+    make \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN wget https://downloads.globus.org/globus-connect-personal/linux/stable/globusconnectpersonal-latest.tgz -O /tmp/globusconnectpersonal-latest.tgz
 RUN tar -xzvf /tmp/globusconnectpersonal-latest.tgz -C /opt
