@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:016833b15ceb
+FROM jupyter/base-notebook:45bfe5a474fa
 # Built from... https://hub.docker.com/r/jupyter/base-notebook/
 #               https://github.com/jupyter/docker-stacks/blob/master/base-notebook/Dockerfile
 # Built from... https://github.com/jupyterhub/zero-to-jupyterhub-k8s/commit/2aa513d92bc31b45231dadf9bdb28ebd55044c4c
