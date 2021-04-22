@@ -10,13 +10,13 @@ minid>=2.0.0b4
 globus-automate-client
 globus-search-cli>=0.7.0
 
-mdf_forge
-mdf_toolbox
+#mdf_forge
+#mdf_toolbox
 
-numpy
+#numpy
 gitpython
-boto3
-matplotlib
-pandas
-plotly
-tqdm>=4.19.4
+#boto3
+#matplotlib
+#pandas
+#plotly
+#tqdm>=4.19.4
