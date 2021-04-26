@@ -24,6 +24,7 @@ COPY tutorial_files.py /srv/tutorial_files.py
 COPY requirements.txt /tmp/requirements.txt
 RUN python -m pip install --no-cache-dir \
     -r /tmp/requirements.txt
+RUN rmdir ~/work/
 
 # Support overriding a package or two through passed docker --build-args.
 # ARG PIP_OVERRIDES="jupyterhub==1.3.0"
