@@ -1,5 +1,12 @@
 ## CHANGELOG
 
+### 1.1.0 -- Apr 26th 2021
+
+* Dist upgrade to Jupyterhub 1.11.0 image
+* Added globus automate client
+* Added globus search cli
+
+
 ### 1.0.2 -- Oct 12th 2020
 
 * Test autobuilds with tag version
