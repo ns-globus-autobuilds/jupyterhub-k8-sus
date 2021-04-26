@@ -1,6 +1,3 @@
-# This file is automatically maintained by Dependabot, as configured in
-# .github/dependabot.yaml.
-
 jupyterhub==1.3.0
 nbgitpuller==0.9.0
 
@@ -10,13 +7,13 @@ minid>=2.0.0b4
 globus-automate-client
 globus-search-cli>=0.7.0
 
-#mdf_forge
-#mdf_toolbox
+mdf_forge
+mdf_toolbox
 
-#numpy
+numpy
 gitpython
-#boto3
-#matplotlib
-#pandas
-#plotly
-#tqdm>=4.19.4
+boto3
+matplotlib
+pandas
+plotly
+tqdm>=4.19.4
