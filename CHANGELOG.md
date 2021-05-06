@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### 1.1.1 -- May 6th 20201
+
+* Added git_repo_puller.py for pulling multiple repos
+    * Script is also more robust, does not error on first time run like nbpuller
+
+
 ### 1.1.0 -- Apr 26th 2021
 
 * Dist upgrade to Jupyterhub 1.11.0 image
