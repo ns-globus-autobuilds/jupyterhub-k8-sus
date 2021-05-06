@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
  && rm -rf /var/lib/apt/lists/*
 USER $NB_USER
 
-COPY tutorial_files.py /srv/tutorial_files.py
+COPY git_repo_puller.py /srv/git_repo_puller.py
 COPY requirements.txt /tmp/requirements.txt
 RUN python -m pip install --no-cache-dir \
     -r /tmp/requirements.txt
