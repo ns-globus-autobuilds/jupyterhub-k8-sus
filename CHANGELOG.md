@@ -1,6 +1,12 @@
 ## CHANGELOG
 
-### 1.1.1 -- May 6th 20201
+### 1.1.2 -- May 10th 2021
+
+* Brought back old tools for pulling notebooks
+* Updated git_repo_puller.py to be a bit more flexible
+    * This is needed due to networking issues with AWS Calico
+
+### 1.1.1 -- May 6th 2021
 
 * Added git_repo_puller.py for pulling multiple repos
     * Script is also more robust, does not error on first time run like nbpuller
