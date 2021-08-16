@@ -1,4 +1,13 @@
-## CHANGELOG
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.1.4](https://github.com/ns-globus-autobuilds/jupyterhub-k8-sus/compare/v1.1.2...v1.1.4) (2021-08-16)
+
+
+### Bug Fixes
+
+* Patched notebook vulnerability and fixed docker build ([cc34552](https://github.com/ns-globus-autobuilds/jupyterhub-k8-sus/commit/cc34552a83142a176793ad1fd1b092fdadb44794))
 
 ### 1.1.2 -- May 10th 2021
 
@@ -32,4 +41,3 @@
 ### 1.0.0 -- June 4th 2020
 
 * Move from rpwagnerbuilds
-
