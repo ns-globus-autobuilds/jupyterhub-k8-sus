@@ -16,10 +16,13 @@ USER root
 RUN apt-get update && apt-get install --yes --no-install-recommends \
     dnsutils \
     git \
+    # build-dep python-matplotlib \
     iputils-ping \
  && rm -rf /var/lib/apt/lists/*
 USER $NB_USER
 
+
+RUN conda install matplotlib
 COPY tutorial_files.py /srv/tutorial_files.py
 COPY git_repo_puller.py /srv/git_repo_puller.py
 # COPY NotebookPuller.ipynb NotebookPuller.ipynb

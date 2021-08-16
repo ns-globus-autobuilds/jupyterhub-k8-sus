@@ -3,7 +3,7 @@ nbgitpuller==0.9.0
 
 globus_sdk==1.9.0
 globus-cli
-minid>=2.0.0b4
+minid>=2.0.0b6
 globus-automate-client
 globus-search-cli>=0.7.0
 
@@ -13,7 +13,7 @@ mdf_toolbox
 numpy
 gitpython
 boto3
-matplotlib
 pandas
 plotly
 tqdm>=4.19.4
+notebook>=6.4.1
