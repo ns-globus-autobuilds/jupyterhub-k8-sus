@@ -1,5 +1,5 @@
 jupyterhub==1.3.0
-nbgitpuller==0.9.0
+nbgitpuller==0.10.2
 
 globus_sdk==1.9.0
 globus-cli
